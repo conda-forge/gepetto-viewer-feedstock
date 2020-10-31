@@ -26,8 +26,8 @@ requirements:
     - doxygen
     - {{ cdt('mesa-libgl-devel') }}      # [linux]
     - {{ cdt('mesa-dri-drivers') }}      # [linux]
-    - {{ cdt('libselinux') }}            # [linux]
-    - {{ cdt('libxdamage') }}            # [linux]
+    - {{ cdt('libselinux-devel') }}      # [linux]
+    - {{ cdt('libxdamage'-devel) }}      # [linux]
     - {{ cdt('libxxf86vm') }}            # [linux]
     - {{ cdt('libxext') }}               # [linux]
   host:
@@ -43,7 +43,15 @@ requirements:
     - openscenegraph-osgqt
   run:
     - xorg-libxfixes
-    - xorg-libx11
+    - xorg-libx11    
+    - boost
+    - assimp
+    - octomap
+    - urdfdom
+    - ffmpeg
+    - qt
+    - openscenegraph
+    - openscenegraph-osgqt
 
 test:
   requires:
@@ -57,7 +65,7 @@ about:
   license: BSD-2-Clause
   license_family: BSD
   license_file: LICENSE
-  summary: 'Graphical Interface for Pinocchio and hpp'
+  summary: 'Graphical Interface for Pinocchio and HPP'
   description: |
     Graphical Interface for Pinocchio and hpp
   doc_url: https://gepettoweb.laas.fr/hpp/gepetto-viewer/doxygen-html/index.html
