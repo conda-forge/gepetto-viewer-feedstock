@@ -1,5 +1,3 @@
-boost:
-- 1.72.0
 boost_cpp:
 - 1.72.0
 cdt_name:
@@ -17,8 +15,6 @@ docker_image:
 ffmpeg:
 - '4.3'
 pin_run_as_build:
-  boost:
-    max_pin: x.x.x
   boost-cpp:
     max_pin: x.x.x
   ffmpeg:
@@ -29,6 +25,3 @@ qt:
 - '5.12'
 target_platform:
 - linux-64
-zip_keys:
-- - boost
-  - boost_cpp
