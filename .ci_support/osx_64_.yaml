@@ -9,7 +9,7 @@ channel_targets:
 cxx_compiler:
 - clangxx
 cxx_compiler_version:
-- '10'
+- '11'
 ffmpeg:
 - '4.3'
 macos_machine:
@@ -17,8 +17,6 @@ macos_machine:
 pin_run_as_build:
   boost-cpp:
     max_pin: x.x.x
-  ffmpeg:
-    max_pin: x.x
   qt:
     max_pin: x.x
 qt:
