@@ -10,7 +10,6 @@ source:
   sha256: c02657999deb9f6875bf5c8b5553a2b8b1bf27f75f116de6eb19bf0cf5ecf796
   patches:
     - patches/qcontext_fix.patch
-    - patches/no_x11_link.patch
     - patches/qt_opengl_option.patch
 
 build:
