@@ -1,5 +1,5 @@
 {% set name = "gepetto-viewer" %}
-{% set version = "4.12.1" %}
+{% set version = "4.13.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,13 +7,13 @@ package:
 
 source:
   url: https://github.com/Gepetto/gepetto-viewer/releases/download/v{{ version }}/gepetto-viewer-{{ version }}.tar.gz
-  sha256: 5d112e7e6263dafe934f165bc6bdf23f5c387ee2c0469117c92e5436a495d1d5
+  sha256: 405c2486dfd22075d17d08e354cce1b960f0e7c219846b874b963ee37c554d4b
   patches:
     - patches/qcontext_fix.patch
     - patches/qt_opengl_option.patch
 
 build:
-  number: 2
+  number: 0
   skip: true  # [win]
   run_exports:
     - {{ pin_subpackage(name|lower, max_pin='x.x') }}
