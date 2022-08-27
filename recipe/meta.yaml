@@ -13,7 +13,7 @@ source:
     - patches/qt_opengl_option.patch
 
 build:
-  number: 3
+  number: 4
   skip: true  # [win]
   run_exports:
     - {{ pin_subpackage(name|lower, max_pin='x.x') }}
@@ -39,7 +39,7 @@ requirements:
     - octomap
     - urdfdom
     - ffmpeg
-    - qt
+    - qt-main
     - openscenegraph
     - openscenegraph-osgqt
   run:
