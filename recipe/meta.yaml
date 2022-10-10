@@ -10,7 +10,6 @@ source:
   sha256: 405c2486dfd22075d17d08e354cce1b960f0e7c219846b874b963ee37c554d4b
   patches:
     - patches/fix_nox11.patch
-    - patches/fix_order_include_glcontext.patch
 
 build:
   number: 0
