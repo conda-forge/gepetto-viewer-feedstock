@@ -1,0 +1,25 @@
+From 02f97070e461f9acdf9bddb9d2071062c7232d09 Mon Sep 17 00:00:00 2001
+From: yann_dm <yann.montmarin@gmail.com>
+Date: Mon, 10 Oct 2022 17:32:14 +0200
+Subject: [PATCH 2/2] FIX: don t use X11 in conda
+
+---
+ src/gui/main.cc.in | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git src/gui/main.cc.in src/gui/main.cc.in
+index f0def84..b59df21 100644
+--- src/gui/main.cc.in
++++ src/gui/main.cc.in
+@@ -43,7 +43,7 @@ void setupApplication ()
+ 
+ int main(int argc, char *argv[])
+ {
+-  QApplication::setAttribute(Qt::AA_X11InitThreads);
++  QApplication::setAttribute(Qt::AA_UseDesktopOpenGL);
+ 
+   SafeApplication a(argc, argv);
+ 
+-- 
+2.25.1
+
