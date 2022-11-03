@@ -36,6 +36,7 @@ requirements:
     - {{ cdt('libxxf86vm') }}             # [linux]
     - {{ cdt('libxext') }}                # [linux]
   host:
+    - boost
     - boost-cpp
     - assimp
     - octomap
@@ -46,6 +47,7 @@ requirements:
     - openscenegraph-osgqt
     - python
   run:
+    - boost
     - boost-cpp
     - python
 
