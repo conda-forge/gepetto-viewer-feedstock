@@ -10,7 +10,6 @@ source:
   sha256: 8d2763b63f987338bd2cb67cbc161a1e2efcef9d9be8af49412ccb234cbb8476
   patches:
     - patches/fix_nox11.patch
-    - patches/osx_fix_gldebugproc.patch  # [osx]
 
 build:
   number: 0
