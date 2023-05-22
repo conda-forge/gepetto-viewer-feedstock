@@ -1,11 +1,11 @@
-About gepetto-viewer
-====================
+About gepetto-viewer-feedstock
+==============================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/gepetto-viewer-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/Gepetto/gepetto-viewer
 
 Package license: BSD-2-Clause
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/gepetto-viewer-feedstock/blob/main/LICENSE.txt)
 
 Summary: Graphical Interface for Pinocchio and HPP
 
