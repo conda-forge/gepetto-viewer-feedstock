@@ -45,6 +45,7 @@ requirements:
     - openscenegraph
     - openscenegraph-osgqt
     - python
+    - setuptools  # [py>311]
   run:
     - boost
     - boost-cpp
