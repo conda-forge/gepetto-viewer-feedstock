@@ -2,25 +2,21 @@ MACOSX_DEPLOYMENT_TARGET:
 - '11.0'
 assimp:
 - 5.3.1
-boost:
-- 1.78.0
-boost_cpp:
-- 1.78.0
 channel_sources:
-- conda-forge/label/python_rc,conda-forge
+- conda-forge
 channel_targets:
 - conda-forge main
 cxx_compiler:
 - clangxx
 cxx_compiler_version:
-- '15'
+- '16'
+libboost_devel:
+- '1.82'
+libboost_python_devel:
+- '1.82'
 macos_machine:
 - arm64-apple-darwin20.0.0
 pin_run_as_build:
-  boost:
-    max_pin: x.x.x
-  boost-cpp:
-    max_pin: x.x.x
   python:
     min_pin: x.x
     max_pin: x.x
@@ -32,6 +28,3 @@ target_platform:
 - osx-arm64
 urdfdom:
 - '3.1'
-zip_keys:
-- - python
-  - channel_sources
