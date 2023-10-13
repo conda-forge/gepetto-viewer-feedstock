@@ -36,7 +36,7 @@ requirements:
     - octomap
     - urdfdom
     - qt-main
-    - ffmpeg
+    - ffmpeg 4.4
     - openscenegraph
     - openscenegraph-osgqt
     - python
