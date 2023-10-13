@@ -12,7 +12,7 @@ source:
     - patches/fix_nox11.patch
 
 build:
-  number: 4
+  number: 5
   skip: true  # [win]
   run_exports:
     - {{ pin_subpackage(name|lower, max_pin='x.x.x') }}
@@ -29,23 +29,18 @@ requirements:
     - {{ cdt('mesa-libgl-devel') }}       # [linux]
     - {{ cdt('mesa-dri-drivers') }}       # [linux]
     - {{ cdt('libselinux-devel') }}       # [linux]
-    - {{ cdt('libxdamage-devel') }}       # [linux]
-    - {{ cdt('libx11-devel') }}           # [linux]
-    - {{ cdt('libxfixes') }}              # [linux]
-    - {{ cdt('libxxf86vm') }}             # [linux]
-    - {{ cdt('libxext') }}                # [linux]
   host:
     - libboost-devel
     - libboost-python-devel
     - assimp
     - octomap
     - urdfdom
-    - ffmpeg  4.4
     - qt-main
+    - ffmpeg 4.4
     - openscenegraph
     - openscenegraph-osgqt
     - python
-    - setuptools  # [py>311]
+    - setuptools                          # [py>311]
   run:
     - python
 
