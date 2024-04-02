@@ -31,4 +31,4 @@ qt_main:
 target_platform:
 - osx-arm64
 urdfdom:
-- '3.1'
+- '4.0'
