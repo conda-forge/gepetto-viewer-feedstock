@@ -43,6 +43,7 @@ requirements:
     - setuptools                          # [py>311]
   run:
     - python
+    - ffmpeg
 
 test:
   requires:
