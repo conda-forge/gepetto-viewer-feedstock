@@ -28,9 +28,14 @@ pin_run_as_build:
     max_pin: x.x
 python:
 - 3.9.* *_cpython
+python_impl:
+- cpython
 qt_main:
 - '5.15'
 target_platform:
 - osx-64
 urdfdom:
 - '4.0'
+zip_keys:
+- - python
+  - python_impl
