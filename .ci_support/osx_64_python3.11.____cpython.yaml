@@ -39,4 +39,3 @@ urdfdom:
 zip_keys:
 - - python
   - python_impl
-  - channel_sources
