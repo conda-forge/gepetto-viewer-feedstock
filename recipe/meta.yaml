@@ -1,5 +1,5 @@
 {% set name = "gepetto-viewer" %}
-{% set version = "6.0.0" %}
+{% set version = "6.1.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://github.com/Gepetto/gepetto-viewer/releases/download/v{{ version }}/gepetto-viewer-{{ version }}.tar.gz
-  sha256: 20e4507d8507874d9b79eb672f91ac459466ab226e58e382d54a424b26989efd
+  sha256: 73067672ad02e7bd52293d4b250defda54760ae2b27800a62be71cdd0c3ed794
   patches:
     - patches/fix_nox11.patch
 
 build:
-  number: 1
+  number: 0
   skip: true  # [win or python_impl == 'pypy']
   run_exports:
     - {{ pin_subpackage(name|lower, max_pin='x.x.x') }}
